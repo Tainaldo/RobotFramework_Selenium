@@ -1,17 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.10.6 on win32)" generated="20220805 12:37:40.276" rpa="false" schemaversion="3">
-<suite id="s1" name="FristRobot" source="C:\Users\Tai\Documents\GitHub\Test Robot\FristRobot.robot">
-<test id="s1-t1" name="TC-001 Verify that when input correct username and password then user can login" line="12">
+<robot generator="Robot 5.0.1 (Python 3.10.6 on win32)" generated="20220808 17:11:58.755" rpa="false" schemaversion="3">
+<suite id="s1" name="XPathex03" source="C:\Users\Tai\Documents\GitHub\RobotFramework_Selenium\XPathex03.robot">
+<test id="s1-t1" name="TC-001 Verify that when input correct username and password then user can login" line="14">
 <kw name="Open Browser" library="Selenium2Library">
-<arg>https://www.google.com</arg>
+<arg>file:///C:/Users/Tai/Documents/GitHub/RobotFramework_Selenium/ep01/ex03.html</arg>
 <arg>browser=chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220805 12:37:41.027" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com'.</msg>
-<status status="PASS" starttime="20220805 12:37:41.025" endtime="20220805 12:37:45.723"/>
+<msg timestamp="20220808 17:11:59.242" level="INFO">Opening browser 'chrome' to base url 'file:///C:/Users/Tai/Documents/GitHub/RobotFramework_Selenium/ep01/ex03.html'.</msg>
+<status status="PASS" starttime="20220808 17:11:59.241" endtime="20220808 17:12:01.087"/>
 </kw>
-<status status="PASS" starttime="20220805 12:37:41.024" endtime="20220805 12:37:45.725"/>
+<kw name="Input Text" library="Selenium2Library">
+<arg>xpath=//div[contains(@v,'username')]/input</arg>
+<arg>Input username</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220808 17:12:01.088" level="INFO">Typing text 'Input username' into text field 'xpath=//div[contains(@v,'username')]/input'.</msg>
+<status status="PASS" starttime="20220808 17:12:01.088" endtime="20220808 17:12:01.233"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>xpath=//div[contains(@v,'password')]/input</arg>
+<arg>Input password</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220808 17:12:01.235" level="INFO">Typing text 'Input password' into text field 'xpath=//div[contains(@v,'password')]/input'.</msg>
+<status status="PASS" starttime="20220808 17:12:01.234" endtime="20220808 17:12:01.354"/>
+</kw>
+<status status="PASS" starttime="20220808 17:11:59.239" endtime="20220808 17:12:01.354"/>
 </test>
-<status status="PASS" starttime="20220805 12:37:40.280" endtime="20220805 12:37:45.731"/>
+<status status="PASS" starttime="20220808 17:11:58.758" endtime="20220808 17:12:01.356"/>
 </suite>
 <statistics>
 <total>
@@ -20,7 +34,7 @@
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="FristRobot">FristRobot</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="XPathex03">XPathex03</stat>
 </suite>
 </statistics>
 <errors>
