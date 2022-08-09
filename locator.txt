@@ -1,8 +1,22 @@
 locator
 - id
 - name
-- xpath 
+- xpath : บอกตำแหน่งของสิ่งใดสิ่งนึงบนหน้าเว็บ
 
-xpath
+XPATH
+
+Input Text name=q sds
+
+/html/div/span/input
+/html//input			: เจาะไปเจอ input เลย
+//input				: เจาะไปเจอ input เลย
+//span //input
 
 
+<html>
+	<div>
+		<span>
+			<input/>
+		</span>
+	</div>
+</html>ห

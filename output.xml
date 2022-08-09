@@ -1,40 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.10.6 on win32)" generated="20220808 22:22:53.182" rpa="false" schemaversion="3">
-<suite id="s1" name="XPathex05" source="C:\Users\Tai\Documents\GitHub\RobotFramework_Selenium\XPathex05.robot">
-<test id="s1-t1" name="TC-001 Verify that when input correct username and password then user can login" line="14">
+<robot generator="Robot 5.0.1 (Python 3.10.4 on win32)" generated="20220809 10:46:55.347" rpa="false" schemaversion="3">
+<suite id="s1" name="AssignmentSelenium" source="C:\Users\YHVM-SN-EN-010\Documents\GitHub\RobotFramework_Selenium\AssignmentSelenium.robot">
+<test id="s1-t1" name="1. Input username" line="11">
 <kw name="Open Browser" library="Selenium2Library">
-<arg>file:///C:/Users/Tai/Documents/GitHub/RobotFramework_Selenium/ep01/EX05.html</arg>
+<arg>file:///C:/Users/YHVM-SN-EN-010/Documents/GitHub/RobotFramework_Selenium/ep01/ep01_small_excercise.html</arg>
 <arg>browser=chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220808 22:22:53.931" level="INFO">Opening browser 'chrome' to base url 'file:///C:/Users/Tai/Documents/GitHub/RobotFramework_Selenium/ep01/EX05.html'.</msg>
-<status status="PASS" starttime="20220808 22:22:53.931" endtime="20220808 22:22:56.434"/>
+<msg timestamp="20220809 10:46:55.499" level="INFO">Opening browser 'chrome' to base url 'file:///C:/Users/YHVM-SN-EN-010/Documents/GitHub/RobotFramework_Selenium/ep01/ep01_small_excercise.html'.</msg>
+<status status="PASS" starttime="20220809 10:46:55.499" endtime="20220809 10:46:56.651"/>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
-<arg>xpath=//div[span[text()='User:']]/input</arg>
-<arg>EX05 5555</arg>
+<arg>id= username-box</arg>
+<arg>TJK</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220808 22:22:56.439" level="INFO">Typing text 'EX05 5555' into text field 'xpath=//div[span[text()='User:']]/input'.</msg>
-<status status="PASS" starttime="20220808 22:22:56.436" endtime="20220808 22:22:56.704"/>
+<msg timestamp="20220809 10:46:56.652" level="INFO">Typing text 'TJK' into text field 'id= username-box'.</msg>
+<status status="PASS" starttime="20220809 10:46:56.652" endtime="20220809 10:46:56.746"/>
 </kw>
-<kw name="Input Text" library="Selenium2Library">
-<arg>xpath=//div[span[text()='Pass:']]/input</arg>
-<arg>EX05 Input password</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220808 22:22:56.708" level="INFO">Typing text 'EX05 Input password' into text field 'xpath=//div[span[text()='Pass:']]/input'.</msg>
-<status status="PASS" starttime="20220808 22:22:56.707" endtime="20220808 22:22:56.972"/>
-</kw>
-<status status="PASS" starttime="20220808 22:22:53.929" endtime="20220808 22:22:56.974"/>
+<status status="PASS" starttime="20220809 10:46:55.491" endtime="20220809 10:46:56.747"/>
 </test>
-<status status="PASS" starttime="20220808 22:22:53.186" endtime="20220808 22:22:56.976"/>
+<test id="s1-t2" name="2. Input password" line="14">
+<kw name="Input Text" library="Selenium2Library">
+<arg>xpath=//div[@v='password']/input</arg>
+<arg>5555</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220809 10:46:56.748" level="INFO">Typing text '5555' into text field 'xpath=//div[@v='password']/input'.</msg>
+<status status="PASS" starttime="20220809 10:46:56.748" endtime="20220809 10:46:56.818"/>
+</kw>
+<status status="PASS" starttime="20220809 10:46:56.747" endtime="20220809 10:46:56.819"/>
+</test>
+<test id="s1-t3" name="3. Input Nickname" line="16">
+<kw name="Input Text" library="Selenium2Library">
+<arg>xpath=//input[@doppio='nickname']</arg>
+<arg>Tai Jaikla</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220809 10:46:56.820" level="INFO">Typing text 'Tai Jaikla' into text field 'xpath=//input[@doppio='nickname']'.</msg>
+<status status="PASS" starttime="20220809 10:46:56.820" endtime="20220809 10:46:56.898"/>
+</kw>
+<status status="PASS" starttime="20220809 10:46:56.819" endtime="20220809 10:46:56.899"/>
+</test>
+<test id="s1-t4" name="4. Select dropdrow : Doppio" line="18">
+<kw name="Select From List By Label" library="Selenium2Library">
+<arg>id=company</arg>
+<arg>Doppio</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<msg timestamp="20220809 10:46:56.900" level="INFO">Selecting options from selection list 'id=company' by label Doppio.</msg>
+<status status="PASS" starttime="20220809 10:46:56.900" endtime="20220809 10:46:56.951"/>
+</kw>
+<status status="PASS" starttime="20220809 10:46:56.899" endtime="20220809 10:46:56.951"/>
+</test>
+<test id="s1-t5" name="5. Click Element : Robot is easy" line="20">
+<kw name="Click Element" library="Selenium2Library">
+<arg>id=op1</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220809 10:46:56.952" level="INFO">Clicking element 'id=op1'.</msg>
+<status status="PASS" starttime="20220809 10:46:56.952" endtime="20220809 10:46:56.996"/>
+</kw>
+<status status="PASS" starttime="20220809 10:46:56.952" endtime="20220809 10:46:56.997"/>
+</test>
+<test id="s1-t6" name="6. Click Element : Click ME to Finish !!" line="22">
+<kw name="Click Button" library="Selenium2Library">
+<arg>id=use-me</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220809 10:46:56.998" level="INFO">Clicking button 'id=use-me'.</msg>
+<status status="PASS" starttime="20220809 10:46:56.998" endtime="20220809 10:46:57.047"/>
+</kw>
+<status status="PASS" starttime="20220809 10:46:56.997" endtime="20220809 10:46:57.048"/>
+</test>
+<status status="PASS" starttime="20220809 10:46:55.347" endtime="20220809 10:46:57.049"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="6" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="XPathex05">XPathex05</stat>
+<stat pass="6" fail="0" skip="0" id="s1" name="AssignmentSelenium">AssignmentSelenium</stat>
 </suite>
 </statistics>
 <errors>
