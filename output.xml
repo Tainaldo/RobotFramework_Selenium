@@ -1,31 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.10.6 on win32)" generated="20220808 22:22:53.182" rpa="false" schemaversion="3">
-<suite id="s1" name="XPathex05" source="C:\Users\Tai\Documents\GitHub\RobotFramework_Selenium\XPathex05.robot">
-<test id="s1-t1" name="TC-001 Verify that when input correct username and password then user can login" line="14">
+<robot generator="Robot 5.0.1 (Python 3.10.4 on win32)" generated="20220809 11:42:18.586" rpa="false" schemaversion="3">
+<suite id="s1" name="TestShopee" source="C:\Users\YHVM-SN-EN-010\Documents\GitHub\RobotFramework_Selenium\TestShopee.robot">
+<test id="s1-t1" name="1. Input กระเป๋า" line="9">
 <kw name="Open Browser" library="Selenium2Library">
-<arg>file:///C:/Users/Tai/Documents/GitHub/RobotFramework_Selenium/ep01/EX05.html</arg>
+<arg>https://shopee.co.th/</arg>
 <arg>browser=chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220808 22:22:53.931" level="INFO">Opening browser 'chrome' to base url 'file:///C:/Users/Tai/Documents/GitHub/RobotFramework_Selenium/ep01/EX05.html'.</msg>
-<status status="PASS" starttime="20220808 22:22:53.931" endtime="20220808 22:22:56.434"/>
+<msg timestamp="20220809 11:42:18.730" level="INFO">Opening browser 'chrome' to base url 'https://shopee.co.th/'.</msg>
+<status status="PASS" starttime="20220809 11:42:18.730" endtime="20220809 11:42:23.965"/>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
-<arg>xpath=//div[span[text()='User:']]/input</arg>
-<arg>EX05 5555</arg>
+<arg>xpath=//input[@aria-label]</arg>
+<arg>กระเป๋า</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220808 22:22:56.439" level="INFO">Typing text 'EX05 5555' into text field 'xpath=//div[span[text()='User:']]/input'.</msg>
-<status status="PASS" starttime="20220808 22:22:56.436" endtime="20220808 22:22:56.704"/>
+<msg timestamp="20220809 11:42:23.969" level="INFO">Typing text 'กระเป๋า' into text field 'xpath=//input[@aria-label]'.</msg>
+<status status="PASS" starttime="20220809 11:42:23.966" endtime="20220809 11:42:24.118"/>
 </kw>
-<kw name="Input Text" library="Selenium2Library">
-<arg>xpath=//div[span[text()='Pass:']]/input</arg>
-<arg>EX05 Input password</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220808 22:22:56.708" level="INFO">Typing text 'EX05 Input password' into text field 'xpath=//div[span[text()='Pass:']]/input'.</msg>
-<status status="PASS" starttime="20220808 22:22:56.707" endtime="20220808 22:22:56.972"/>
-</kw>
-<status status="PASS" starttime="20220808 22:22:53.929" endtime="20220808 22:22:56.974"/>
+<status status="PASS" starttime="20220809 11:42:18.729" endtime="20220809 11:42:24.119"/>
 </test>
-<status status="PASS" starttime="20220808 22:22:53.186" endtime="20220808 22:22:56.976"/>
+<status status="PASS" starttime="20220809 11:42:18.588" endtime="20220809 11:42:24.119"/>
 </suite>
 <statistics>
 <total>
@@ -34,7 +27,7 @@
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="XPathex05">XPathex05</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="TestShopee">TestShopee</stat>
 </suite>
 </statistics>
 <errors>

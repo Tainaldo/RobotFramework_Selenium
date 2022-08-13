@@ -1,0 +1,9 @@
+คำสั่งที่ใช้บ่อย
+
+*** search google : seleniumlibrary robot framework : เพื่อดูวิธีการใช้ Library ***
+
+- Input Text ---> For Input text into textbox use with <Input> : ใช้ Input ข้อมูลต่างๆลงใน textbox
+- Click Element ---> Click everything <div> <button> <input> , whatever : คลิ๊กอะไรก็ได้ <div> <button> <input>
+- Select From List By Label ---> Select valve From dropdown : เอาไว้เลือก dropdown ต้องดู locator  <select>
+- Sleep ---> pause robot for "x" seconds before continue : ให้ robot หยุดรอ
+- Open Browser ---> open browser
