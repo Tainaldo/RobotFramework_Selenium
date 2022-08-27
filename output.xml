@@ -1,33 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.10.4 on win32)" generated="20220809 11:42:18.586" rpa="false" schemaversion="3">
-<suite id="s1" name="TestShopee" source="C:\Users\YHVM-SN-EN-010\Documents\GitHub\RobotFramework_Selenium\TestShopee.robot">
-<test id="s1-t1" name="1. Input กระเป๋า" line="9">
+<robot generator="Robot 5.0.1 (Python 3.10.6 on win32)" generated="20220814 16:26:22.994" rpa="false" schemaversion="3">
+<suite id="s1" name="TestBotnoi" source="C:\Users\Tai\Documents\GitHub\RobotFramework_Selenium\TestBotnoi.robot">
+<test id="s1-t1" name="TC-001 เปิดฟังเสียง ของ Botnoi voice" line="5">
 <kw name="Open Browser" library="Selenium2Library">
-<arg>https://shopee.co.th/</arg>
+<arg>https://voice.botnoi.ai/</arg>
 <arg>browser=chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220809 11:42:18.730" level="INFO">Opening browser 'chrome' to base url 'https://shopee.co.th/'.</msg>
-<status status="PASS" starttime="20220809 11:42:18.730" endtime="20220809 11:42:23.965"/>
+<msg timestamp="20220814 16:26:23.530" level="INFO">Opening browser 'chrome' to base url 'https://voice.botnoi.ai/'.</msg>
+<status status="PASS" starttime="20220814 16:26:23.530" endtime="20220814 16:26:33.673"/>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
-<arg>xpath=//input[@aria-label]</arg>
-<arg>กระเป๋า</arg>
+<arg>xpath=//input[@_ngcontent-sjo-c92]</arg>
+<arg>สวัสดี</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220809 11:42:23.969" level="INFO">Typing text 'กระเป๋า' into text field 'xpath=//input[@aria-label]'.</msg>
-<status status="PASS" starttime="20220809 11:42:23.966" endtime="20220809 11:42:24.118"/>
+<msg timestamp="20220814 16:26:33.676" level="INFO">Typing text 'สวัสดี' into text field 'xpath=//input[@_ngcontent-sjo-c92]'.</msg>
+<msg timestamp="20220814 16:26:34.280" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220814 16:26:34.280" level="FAIL">Element with locator 'xpath=//input[@_ngcontent-sjo-c92]' not found.</msg>
+<status status="FAIL" starttime="20220814 16:26:33.673" endtime="20220814 16:26:34.282"/>
 </kw>
-<status status="PASS" starttime="20220809 11:42:18.729" endtime="20220809 11:42:24.119"/>
+<status status="FAIL" starttime="20220814 16:26:23.526" endtime="20220814 16:26:34.286">Element with locator 'xpath=//input[@_ngcontent-sjo-c92]' not found.</status>
 </test>
-<status status="PASS" starttime="20220809 11:42:18.588" endtime="20220809 11:42:24.119"/>
+<status status="FAIL" starttime="20220814 16:26:22.998" endtime="20220814 16:26:34.286"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="TestShopee">TestShopee</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="TestBotnoi">TestBotnoi</stat>
 </suite>
 </statistics>
 <errors>
