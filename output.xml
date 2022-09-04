@@ -1,35 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.10.6 on win32)" generated="20220814 16:26:22.994" rpa="false" schemaversion="3">
-<suite id="s1" name="TestBotnoi" source="C:\Users\Tai\Documents\GitHub\RobotFramework_Selenium\TestBotnoi.robot">
-<test id="s1-t1" name="TC-001 เปิดฟังเสียง ของ Botnoi voice" line="5">
+<robot generator="Robot 5.0.1 (Python 3.10.6 on win32)" generated="20220827 21:36:44.759" rpa="false" schemaversion="3">
+<suite id="s1" name="TestShopee" source="C:\Users\Tai\Documents\GitHub\RobotFramework_Selenium\TestShopee.robot">
+<test id="s1-t1" name="1. Input กระเป๋า" line="9">
 <kw name="Open Browser" library="Selenium2Library">
-<arg>https://voice.botnoi.ai/</arg>
+<arg>https://shopee.co.th/</arg>
 <arg>browser=chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220814 16:26:23.530" level="INFO">Opening browser 'chrome' to base url 'https://voice.botnoi.ai/'.</msg>
-<status status="PASS" starttime="20220814 16:26:23.530" endtime="20220814 16:26:33.673"/>
+<msg timestamp="20220827 21:36:45.296" level="INFO">Opening browser 'chrome' to base url 'https://shopee.co.th/'.</msg>
+<status status="PASS" starttime="20220827 21:36:45.296" endtime="20220827 21:36:51.306"/>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
-<arg>xpath=//input[@_ngcontent-sjo-c92]</arg>
-<arg>สวัสดี</arg>
+<arg>xpath=//input[@aria-label]</arg>
+<arg>กระเป๋า</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220814 16:26:33.676" level="INFO">Typing text 'สวัสดี' into text field 'xpath=//input[@_ngcontent-sjo-c92]'.</msg>
-<msg timestamp="20220814 16:26:34.280" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20220814 16:26:34.280" level="FAIL">Element with locator 'xpath=//input[@_ngcontent-sjo-c92]' not found.</msg>
-<status status="FAIL" starttime="20220814 16:26:33.673" endtime="20220814 16:26:34.282"/>
+<msg timestamp="20220827 21:36:51.309" level="INFO">Typing text 'กระเป๋า' into text field 'xpath=//input[@aria-label]'.</msg>
+<status status="PASS" starttime="20220827 21:36:51.307" endtime="20220827 21:36:55.636"/>
 </kw>
-<status status="FAIL" starttime="20220814 16:26:23.526" endtime="20220814 16:26:34.286">Element with locator 'xpath=//input[@_ngcontent-sjo-c92]' not found.</status>
+<status status="PASS" starttime="20220827 21:36:45.293" endtime="20220827 21:36:55.637"/>
 </test>
-<status status="FAIL" starttime="20220814 16:26:22.998" endtime="20220814 16:26:34.286"/>
+<status status="PASS" starttime="20220827 21:36:44.763" endtime="20220827 21:36:55.641"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="TestBotnoi">TestBotnoi</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="TestShopee">TestShopee</stat>
 </suite>
 </statistics>
 <errors>
