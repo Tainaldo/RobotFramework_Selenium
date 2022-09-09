@@ -1,21 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <robot generator="Robot 5.0.1 (Python 3.10.4 on win32)" generated="20220909 11:33:19.526" rpa="false" schemaversion="3">
 <suite id="s1" name="Test" source="C:\Users\YHVM-SN-EN-010\Documents\GitHub\RobotFramework_Selenium\test.robot">
 <test id="s1-t1" name="กด Button เว็บ Botnoi vice" line="13">
 <kw name="เปิดเว็บ Botnoi">
+=======
+<robot generator="Robot 5.0.1 (Python 3.10.6 on win32)" generated="20220827 21:36:44.759" rpa="false" schemaversion="3">
+<suite id="s1" name="TestShopee" source="C:\Users\Tai\Documents\GitHub\RobotFramework_Selenium\TestShopee.robot">
+<test id="s1-t1" name="1. Input กระเป๋า" line="9">
+>>>>>>> fdbea2fc84481c3701aa75f1ff8bc3e440a15abb
 <kw name="Open Browser" library="Selenium2Library">
 <arg>${url}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
+<<<<<<< HEAD
 <msg timestamp="20220909 11:33:19.666" level="INFO">Opening browser 'chrome' to base url 'https://voice.botnoi.ai/'.</msg>
 <status status="PASS" starttime="20220909 11:33:19.666" endtime="20220909 11:33:26.036"/>
 </kw>
 <status status="PASS" starttime="20220909 11:33:19.666" endtime="20220909 11:33:26.036"/>
+=======
+<msg timestamp="20220827 21:36:45.296" level="INFO">Opening browser 'chrome' to base url 'https://shopee.co.th/'.</msg>
+<status status="PASS" starttime="20220827 21:36:45.296" endtime="20220827 21:36:51.306"/>
+>>>>>>> fdbea2fc84481c3701aa75f1ff8bc3e440a15abb
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <arg>id=mat-input-0</arg>
 <arg>สวัสดี</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<<<<<<< HEAD
 <msg timestamp="20220909 11:33:26.036" level="INFO">Typing text 'สวัสดี' into text field 'id=mat-input-0'.</msg>
 <status status="PASS" starttime="20220909 11:33:26.036" endtime="20220909 11:33:26.144"/>
 </kw>
@@ -27,6 +39,14 @@
 <status status="PASS" starttime="20220909 11:33:19.665" endtime="20220909 11:33:26.167"/>
 </test>
 <status status="PASS" starttime="20220909 11:33:19.527" endtime="20220909 11:33:26.167"/>
+=======
+<msg timestamp="20220827 21:36:51.309" level="INFO">Typing text 'กระเป๋า' into text field 'xpath=//input[@aria-label]'.</msg>
+<status status="PASS" starttime="20220827 21:36:51.307" endtime="20220827 21:36:55.636"/>
+</kw>
+<status status="PASS" starttime="20220827 21:36:45.293" endtime="20220827 21:36:55.637"/>
+</test>
+<status status="PASS" starttime="20220827 21:36:44.763" endtime="20220827 21:36:55.641"/>
+>>>>>>> fdbea2fc84481c3701aa75f1ff8bc3e440a15abb
 </suite>
 <statistics>
 <total>
