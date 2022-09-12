@@ -2,10 +2,19 @@
 Library        Selenium2Library
 
 *** Variables ***
+${browser}    chrome
+${url}        https://www.google.co.th/
+${expected_result}    มะพร้าว
 
 *** Keywords ***
+เปิดเว็บ
+    Open Browser    ${url}    ${browser}
+ค้นหาตาม Keywords
+    Input Text    name=q    ${expected_result}
+    Submit Form
 
 *** Test Cases ***
-1. Input กระเป๋า
-    Open Browser    https://shopee.co.th/        browser=chrome
-    Input Text    xpath=//input[@aria-label]    กระเป๋า
+T001 Search
+    เปิดเว็บ
+    ค้นหาตาม Keywords
+    
