@@ -1,24 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.10.6 on win32)" generated="20220827 21:36:44.759" rpa="false" schemaversion="3">
-<suite id="s1" name="TestShopee" source="C:\Users\Tai\Documents\GitHub\RobotFramework_Selenium\TestShopee.robot">
-<test id="s1-t1" name="1. Input กระเป๋า" line="9">
+<robot generator="Robot 5.0.1 (Python 3.10.6 on win32)" generated="20220910 21:05:35.774" rpa="false" schemaversion="3">
+<suite id="s1" name="NokAir" source="C:\Users\Tai\Documents\GitHub\RobotFramework_Selenium\NokAir.robot">
+<test id="s1-t1" name="T001 login" line="13">
+<kw name="เปิดเว็บ">
 <kw name="Open Browser" library="Selenium2Library">
-<arg>https://shopee.co.th/</arg>
-<arg>browser=chrome</arg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220827 21:36:45.296" level="INFO">Opening browser 'chrome' to base url 'https://shopee.co.th/'.</msg>
-<status status="PASS" starttime="20220827 21:36:45.296" endtime="20220827 21:36:51.306"/>
+<msg timestamp="20220910 21:05:36.310" level="INFO">Opening browser 'chrome' to base url 'https://www.nokair.com/member'.</msg>
+<status status="PASS" starttime="20220910 21:05:36.309" endtime="20220910 21:05:40.690"/>
 </kw>
-<kw name="Input Text" library="Selenium2Library">
-<arg>xpath=//input[@aria-label]</arg>
-<arg>กระเป๋า</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220827 21:36:51.309" level="INFO">Typing text 'กระเป๋า' into text field 'xpath=//input[@aria-label]'.</msg>
-<status status="PASS" starttime="20220827 21:36:51.307" endtime="20220827 21:36:55.636"/>
+<status status="PASS" starttime="20220910 21:05:36.309" endtime="20220910 21:05:40.692"/>
 </kw>
-<status status="PASS" starttime="20220827 21:36:45.293" endtime="20220827 21:36:55.637"/>
+<kw name="Click Link" library="Selenium2Library">
+<arg>link:Log in</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20220910 21:05:40.700" level="INFO">Clicking link 'link:Log in'.</msg>
+<status status="PASS" starttime="20220910 21:05:40.697" endtime="20220910 21:05:42.061"/>
+</kw>
+<status status="PASS" starttime="20220910 21:05:36.307" endtime="20220910 21:05:42.062"/>
 </test>
-<status status="PASS" starttime="20220827 21:36:44.763" endtime="20220827 21:36:55.641"/>
+<status status="PASS" starttime="20220910 21:05:35.777" endtime="20220910 21:05:42.064"/>
 </suite>
 <statistics>
 <total>
@@ -27,7 +29,7 @@
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="TestShopee">TestShopee</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="NokAir">NokAir</stat>
 </suite>
 </statistics>
 <errors>
