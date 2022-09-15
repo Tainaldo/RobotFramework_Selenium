@@ -12,4 +12,7 @@ ${browser}    chrome
 *** Test Cases ***
 T001 login
     เปิดเว็บ
-    Click Link    link:Log in
+    Click Link    link:เข้าสู่ระบบ
+    Close Browser
+
+T002 
