@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.4 on win32)" generated="20220919 08:39:43.711" rpa="false" schemaversion="3">
+<suite id="s1" name="Assignment" source="C:\Users\YHVM-SN-EN-010\Documents\GitHub\RobotFramework_Selenium\Assignment.robot">
+<test id="s1-t1" name="Register doppio" line="19">
+<kw name="Input username">
+<kw name="Open Browser" library="Selenium2Library">
+<arg>file:///C:/Users/YHVM-SN-EN-010/Documents/GitHub/RobotFramework_Selenium/ep01/ep01_small_excercise.html</arg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220919 08:39:43.858" level="INFO">Opening browser 'chrome' to base url 'file:///C:/Users/YHVM-SN-EN-010/Documents/GitHub/RobotFramework_Selenium/ep01/ep01_small_excercise.html'.</msg>
+<status status="PASS" starttime="20220919 08:39:43.858" endtime="20220919 08:39:45.026"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>id= username-box</arg>
+<arg>TJK</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220919 08:39:45.026" level="INFO">Typing text 'TJK' into text field 'id= username-box'.</msg>
+<status status="PASS" starttime="20220919 08:39:45.026" endtime="20220919 08:39:45.092"/>
+</kw>
+<status status="PASS" starttime="20220919 08:39:43.858" endtime="20220919 08:39:45.092"/>
+</kw>
+<kw name="Input password">
+<kw name="Input Text" library="Selenium2Library">
+<arg>xpath=//div[@v='password']/input</arg>
+<arg>5555</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220919 08:39:45.093" level="INFO">Typing text '5555' into text field 'xpath=//div[@v='password']/input'.</msg>
+<status status="PASS" starttime="20220919 08:39:45.093" endtime="20220919 08:39:45.145"/>
+</kw>
+<status status="PASS" starttime="20220919 08:39:45.092" endtime="20220919 08:39:45.145"/>
+</kw>
+<kw name="Input Nickname">
+<kw name="Input Text" library="Selenium2Library">
+<arg>xpath=//input[@doppio='nickname']</arg>
+<arg>Tai Jaikla</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220919 08:39:45.146" level="INFO">Typing text 'Tai Jaikla' into text field 'xpath=//input[@doppio='nickname']'.</msg>
+<status status="PASS" starttime="20220919 08:39:45.146" endtime="20220919 08:39:45.211"/>
+</kw>
+<status status="PASS" starttime="20220919 08:39:45.145" endtime="20220919 08:39:45.211"/>
+</kw>
+<kw name="Select dropdrow : Doppio">
+<kw name="Select From List By Label" library="Selenium2Library">
+<arg>id=company</arg>
+<arg>Doppio</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<msg timestamp="20220919 08:39:45.212" level="INFO">Selecting options from selection list 'id=company' by label Doppio.</msg>
+<status status="PASS" starttime="20220919 08:39:45.212" endtime="20220919 08:39:45.258"/>
+</kw>
+<status status="PASS" starttime="20220919 08:39:45.211" endtime="20220919 08:39:45.258"/>
+</kw>
+<kw name="Click Element : Robot is easy">
+<kw name="Click Element" library="Selenium2Library">
+<arg>id=op1</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220919 08:39:45.259" level="INFO">Clicking element 'id=op1'.</msg>
+<status status="PASS" starttime="20220919 08:39:45.259" endtime="20220919 08:39:45.291"/>
+</kw>
+<status status="PASS" starttime="20220919 08:39:45.258" endtime="20220919 08:39:45.292"/>
+</kw>
+<kw name="Click Element : Click ME to Finish !!">
+<kw name="Click Button" library="Selenium2Library">
+<arg>id=use-me</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220919 08:39:45.292" level="INFO">Clicking button 'id=use-me'.</msg>
+<status status="PASS" starttime="20220919 08:39:45.292" endtime="20220919 08:39:45.332"/>
+</kw>
+<status status="PASS" starttime="20220919 08:39:45.292" endtime="20220919 08:39:45.332"/>
+</kw>
+<status status="PASS" starttime="20220919 08:39:43.857" endtime="20220919 08:39:45.332"/>
+</test>
+<status status="PASS" starttime="20220919 08:39:43.713" endtime="20220919 08:39:45.334"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Assignment">Assignment</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
