@@ -22,4 +22,4 @@ Register doppio
     Input Nickname
     Select dropdrow : Doppio
     Click Element : Robot is easy
-    Click Element : Click ME to Finish !!
+    Click Element : Click ME to Finish !! 

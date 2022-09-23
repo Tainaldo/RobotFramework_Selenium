@@ -2,7 +2,7 @@
 Library    Selenium2Library
 
 *** Variables ***
-${url}        https://voice.botnoi.ai/
+${url}        https://developer.salesforce.com/signup
 ${browser}    chrome
 
 *** Keywords ***
@@ -11,7 +11,5 @@ ${browser}    chrome
 
 *** Test Cases ***
 กด Button เว็บ Botnoi vice 
-    เปิดเว็บ Botnoi
-    Input Text    id=mat-input-0    สวัสดี   
-    Submit Form
-      
+
+
